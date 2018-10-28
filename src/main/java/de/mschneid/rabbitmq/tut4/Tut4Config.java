@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Profile;
 public class Tut4Config {
 
     @Bean
-    public DirectExchange fanout() {
+    public DirectExchange dircect() {
         return new DirectExchange("tut.direct");
     }
 
