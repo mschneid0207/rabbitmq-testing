@@ -29,7 +29,7 @@ public class Tut3Sender {
 
         builder.append(Integer.toString(++count));
         String message = builder.toString();
-        rabbitTemplate.convertAndSend(fanout.getName(), message);
+        rabbitTemplate.convertAndSend(fanout.getName(), "", message);
         System.out.println(" [x] Sent '" + message + "'");
     }
 }
